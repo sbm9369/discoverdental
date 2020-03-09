@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Evie by unDraw</title>
+	<!-- Don't forget to add your metadata here -->
+	<link rel='stylesheet' href='css/style.css' />
+</head>
+<body>
+	
+	<!-- Hero unit -->
+	<div class="hero">
+		<div class="hero__overlay hero__overlay--gradient"></div>
+		<div class="hero__mask"></div>
+		<div class="hero__inner">
+			<div class="container">
+				<div class="hero__content">
+					<div class="hero__content__inner" id='navConverter'>
+						<h1 class="hero__title">DISCOVER DENTAL<br>CONSULTING</h1>
+						<p class="hero__text">BUILDING SUCCESSFUL DENTAL PRACTICES SINCE 2005</p>
+						<a href="#contact" class="button button__accent">Contact Us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Steps -->
+	<div class="steps landing__section">
+		<div class="container">
+			<h4>PROFESSIONAL, EFFECIENT, &amp; AFFORDABLE</h4>
+			<h2>BUSINESS CONSULTING<br>FOR SMALL AND MEDIUM SIZED DENTAL PRACTICES</h2>
+		</div>
+		<div class="container">
+			<div class="steps__inner">
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/research.svg" class="step__image">
+					</div>
+					<h4>RESEARCH</h4>
+					<p class="step__text">In depth market research, data mining, and competitor evaluations.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/evaluate.svg" class="step__image">
+					</div>
+					<h4>EVALUATION</h4>
+					<p class="step__text">Advanced evaluation of your practice; its image, culture, processes and more.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/enhance.svg" class="step__image">
+					</div>
+					<h4>ENHANCEMENT</h4>
+					<p class="step__text">Every client receives a detailed plan and access to an account manager to implement our suggestions.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Expanded sections -->
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./images/goals.svg" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">OUR SIMPLE, EFFECTIVE PROCESS</h2>
+					<p class="expanded__text">It may be old-school to some, but at Discover Dental we believe that the first step to making any practice successful is an honest conversation about where you're at. Your consultant will meet with you and your staff one-on-one to discuss the ins-and-outs of your practice. They will review data from various sources, look at your competitors in the area, and evaluate the day-to-day function of your office.</p>
+                    <p class="expanded__text">Once the data has been collected and reviewed, your consultant will work with you to implement the changes they believe are needed to get your practice on track. Whether your practice is struggling for unknown reasons or you're looking to grow your already thriving practice to the next stage, Discover Dental Consulting is here to help you achieve your goals.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./images/logo.png" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Who are we?</h2>
+					<p class="expanded__text">Founded in 2005, Discover Dental is a consulting group specializing in the development of dental practices. Our consultants have decades of experience in the dental industry prior to joining Discover Dental. They are experts in their fields, and it shows. Practices implementing Discover Dental's policies and approaches see an increase in monthly profits from a low of 10% to a high of 300% within 3-6 months. In more than a third of practices we've worked with, our consultants have discovered discrepencies in the practices's financial statements (which typically occur when  an employee is imbezzling or isn't collecting from insurance properly).</p>
+                    <p class="expanded__text">Contact our team to learn more about Discover Dental Consulting and the processes we implement.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Call To Action -->
+	<div class="cta cta--reverse" id="contact">
+		<div class="container">
+			<div class="cta__inner">
+				<h2 class="cta__title">Contact Us</h2>
+				<p class="cta__sub cta__sub--center">Use the form below to contact our office</p>
+			<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                <input type='text' name='name' placeholder="Full Name">
+                <input type='email' name='email' placeholder="Email Address">
+                <input type='text' name='phone' placeholder="Phone Number">
+                <textarea name='message' placeholder="How can we help you?" id='textarea'></textarea>
+                <div data-netlify-recaptcha="true"></div>
+                <input type='submit' class="button button__accent" value="Submit">
+            </form>	
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<div class="footer footer--dark">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__data">
+					<div class="footer__data__item">
+						<div class="footer__row">
+							Copyright 2020 &copy; Discover Dental Consulting, LLC
+						</div>
+					</div>
+					<div class="footer__data__item">
+					<div class="footer__row">
+						Designed by <a href="https://bradan.co" target="_blank" class="footer__link">Bradan</a>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    </div>
+<script src='js/app.min.js'></script>
+<script src="js/smoothscroll/smooth-scroll.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+</html>
